@@ -64,6 +64,7 @@ end
 def shortened_tweet_truncator(string)
   if string.size > 140
     result = word_substituter(string)
+    binding.pry
     if result >= 140
       return result[1..140] + "..."
     else
